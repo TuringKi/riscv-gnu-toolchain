@@ -1,5 +1,8 @@
 FROM ubuntu:latest
 
+ENV DEBIAN_FRONTEND=noninteractive
+
+
 # Install:
 # - git (and git-lfs), for git operations (to e.g. push your work).
 #   Also required for setting up your configured dotfiles in the workspace.
