@@ -6,7 +6,7 @@ FROM ubuntu:latest
 # - sudo, while not required, is recommended to be installed, since the
 #   workspace user (`gitpod`) is non-root and won't be able to install
 #   and use `sudo` to install any other tools in a live workspace.
-RUN apt-get update && apt-get install -yq \
+RUN apt-get update && apt-get install -yq build-essential libgmp3-dev libmpfr-dev libmpc-dev flex bison autogen gcc-multilib dejagnu clangd clang clang++ clang-tidy bear htop vim \
     git \
     git-lfs \
     sudo \
