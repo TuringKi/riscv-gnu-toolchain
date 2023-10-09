@@ -9,7 +9,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 # - sudo, while not required, is recommended to be installed, since the
 #   workspace user (`gitpod`) is non-root and won't be able to install
 #   and use `sudo` to install any other tools in a live workspace.
-RUN apt-get update && apt-get install -yq build-essential libgmp3-dev libmpfr-dev libmpc-dev flex bison autogen gcc-multilib dejagnu clangd clang-tidy bear htop vim device-tree-compiler \
+RUN apt-get update && apt-get install -yq autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex \
+    texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build  \
+    cmake libglib2.0-dev clangd clang-tidy bear htop vim device-tree-compiler \
     git \
     git-lfs \
     sudo \
