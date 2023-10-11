@@ -8,3 +8,8 @@ Makefile
 /build-*/
 /install-newlib-nano/
 /stamps/
+.build
+.vscode
+.cache
+.install
+compile_commands.json
